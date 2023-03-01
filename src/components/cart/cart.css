@@ -1,0 +1,561 @@
+.icons {
+    display: flex;
+    align-items:center;
+    height: auto;
+}
+.favourite, .cart  {
+    gap:0;
+    margin-top: 7px;
+    display: block;
+    height: 60px;
+    width:60px;
+    background-size: 100%;
+    background-position: initial;
+    background-repeat: no-repeat;
+    font-size: 100px;
+}
+ .favourite {
+    background-image: url(../../img/favourite-active.png);
+    border-radius: 30px;
+    cursor:pointer
+
+ }
+.cart {
+    background-image: url(../../img/cart-active.png);
+
+}
+.cart-all {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.favourite__round, .cart__round{
+    background-color:  rgb(248, 221, 248);
+    border:2px solid #fff;
+    color:#003f34;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    width: 30px;
+    height:30px;
+    border-radius: 15px;
+    position: relative;
+    top: -65px;
+    left: -10px;
+}
+.hidden {
+    visibility: hidden;
+}
+.mini-cart__img {
+    width:50px;
+    height:50px;
+    padding: 2px;
+}
+.big-cart__img {
+    width:100px;
+    height:100px;
+    padding: 2px;
+    cursor: pointer;
+}
+.mini-cart__li, .mini-cart__total{
+    vertical-align: middle;
+    font-family: 'Oswald', sans-serif;
+    color: #624949;
+    list-style:none;
+    padding-right: 5px;
+    width:max-content;
+}
+.big-cart__li, .big-cart__total {
+    display: flex;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    color: #624949;
+    list-style:none;
+    width:100%;
+    font-size: 22px;
+    height: 100px;
+    padding-right: 10px;
+
+}
+.mini-cart {
+    display: none;
+    position: absolute;
+    right: 0;
+    top:70px;
+    background-color:#fff;
+    z-index: 3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #624949, 0 0 1.2em rgb(166, 166, 165), 0 0 0.4em rgb(143, 107, 141) ;
+}
+
+.mini-cart__name {
+    display:inline-block;
+    width:400px;
+}
+.big-cart__name {
+    display:inline-block;
+    width:400px;
+    margin-right: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.mini-cart__total {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 20px;
+}
+.big-cart-price {
+    display: inline-block;
+    padding-right: 10px;
+    width: 110px;
+}
+.quantity {
+    display:inline-block;
+    width:25px;
+    text-align: center;
+}
+.quantity-minus, .quantity-plus {
+    background-color:  rgb(143, 107, 141);
+    box-shadow: inset 2px 2px 5px rgb(248, 221, 248);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    padding: 2px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    width: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.quantity-minus-big, .quantity-plus-big {
+    background-color:  rgb(143, 107, 141);
+    box-shadow: inset 2px 2px 5px rgb(248, 221, 248);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    padding: 2px;
+    text-align: center;
+    font-size: 22px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.go-to-cart__btn {
+    background-color:  rgb(143, 107, 141);
+    box-shadow: inset 2px 2px 5px rgb(248, 221, 248);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    padding: 12px;
+    margin: 0 0 10px 10px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-all:hover .mini-cart {
+    display: block;
+}
+
+.two-columns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
+    width: 100%;
+}
+.big-cart-parameters {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: rgb(143, 107, 141) ;
+    border-radius: 5px;
+    height: 50px;
+}
+.big-cart {
+    width: 60%;
+    background-color: rgb(248, 221, 248);
+    border-radius: 5px;
+    height:min-content;
+}
+
+.promocode {
+    width: 35%;
+    background-color: #003f34;
+    border-radius: 5px;
+}
+.big-cart__h2 {
+    color: rgb(248, 221, 248);
+    font-size: 22px;
+    flex-grow: 1;
+    height:fit-content;
+    text-align: left;
+    text-shadow: 2px 2px 5px #624949, 0 0 1.2em rgb(166, 166, 165), 0 0 0.4em rgb(143, 107, 141) ;
+
+}
+.limit-products, .big-cart-pages {
+    font-family: 'Oswald', sans-serif;
+    color:#fff;
+}
+.big-cart-pages__span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#limit-products {
+    width:30px;
+    height: 30px;
+    background-color: rgb(248, 221, 248);
+    font-family: 'Oswald', sans-serif;
+    box-shadow: inset 2px 2px 5px rgb(248, 221, 248);
+    border-radius: 5px;
+    color:#624949;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 10px;
+    
+}
+.big-cart__btn {
+    background-color:  rgb(248, 221, 248);
+    box-shadow: inset 2px 2px 5px rgb(143, 107, 141);
+    border-radius: 5px;
+    color: rgb(143, 107, 141);
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.counter {
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 5px;
+    border: 2px solid rgb(143, 107, 141);
+    box-shadow: inset 2px 2px 5px rgb(143, 107, 141);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.nocart{
+    padding:0;
+    width: 1000px;
+    height:1000px;
+    margin-left: 100px;
+    background-position: top center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(../../img/404-nothing-found-cart.jpg);
+}
+.promocode {
+    border-radius: 5px;
+}
+
+.promocode__h2 {
+    background-color: rgb(143, 107, 141);
+    border-radius: 5px;
+    font-size: 26px;
+    padding-top: 10px;
+    color: rgb(248, 221, 248);
+    font-size: 26px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #624949, 0 0 1.2em rgb(166, 166, 165), 0 0 0.4em rgb(143, 107, 141) ;
+}
+.promocode__h3, .total-price__h3 {
+    color: rgb(248, 221, 248);
+    position: relative;
+    font-size: 24px;
+    margin: 10px 0 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.promocode-before-applying {
+    color: rgb(248, 221, 248);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+#total-quantity, #total-price__span {
+    color:  rgb(166, 166, 165);
+}
+.cross {
+    display: inline-block;
+    background-color:rgb(219, 52, 85);
+    width: 85px;
+    height: 4px;
+    transform: rotate(160deg);
+    position: absolute;
+    top:30px;
+    left:250px;
+    z-index: 3;
+}
+#total-price-discount__span {
+    margin: 0;
+    color:rgb(219, 52, 85);
+    font-size: 30px;
+    position: relative;
+    left: 280px;
+    top:15px;
+    font-family: 'Oswald', sans-serif;
+    z-index: 2;
+    width: fit-content;
+}
+.total-price__h3 {
+    margin-top: -60px;
+}
+#aplied-promocodes {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(248, 221, 248);
+    width:80%;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+h4{
+    background-color: rgb(143, 107, 141);
+    border-radius: 5px;
+    color: rgb(248, 221, 248);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.enter-promocode__div{
+    position:relative;
+    margin-top: 0;
+}
+#enter-promocode {
+    display:block;
+    border: 2px solid  rgb(143, 107, 141);
+    border-radius: 40px;
+    background-color: #edf2f2;
+    color: #624949;
+    font-family: 'Jost', sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 60%;
+}
+.reset-promocode {
+    display: inline-block;
+    border-radius: 40px;
+    background-color: rgb(143, 107, 141);
+    color:#edf2f2;
+    border: none;
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top: 6px;
+    left:310px;
+    cursor: pointer;
+}
+.reset-promocode__btn {
+    position:absolute;
+    top: 0;
+    left:270px
+}
+.aplied-promocode__div {
+    color: #624949;
+    position:relative;
+    text-align: center;
+    height: 40px;
+}
+.apply-promocode__btn {
+    background-color: rgb(143, 107, 141);
+    color:#edf2f2;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-size: 'Jost', sans-serif;
+    width: max-content;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.examples {
+    color:rgb(219, 52, 85);
+    font-size: 16px;
+    font-size: 'Jost', sans-serif;
+    text-align: center;
+}
+#buy {
+    background-color: rgb(143, 107, 141);
+    color:#edf2f2;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-size: 'Jost', sans-serif;
+    width: max-content;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto 120px;
+    text-shadow: 2px 2px 5px #624949, 0 0 1.2em rgb(166, 166, 165), 0 0 0.4em rgb(143, 107, 141) ;
+    cursor:pointer
+}
+.none{
+    display: none;
+}
+
+.modal{
+    background-color: rgb(248, 221, 248); ;
+    position:fixed;
+    top:3%;
+    left: 30%;
+    z-index: 100;
+    width: 40%;
+    height: 94%;
+    border-radius: 5px;   
+}
+.modal h2 {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    height: fit-content;
+    
+}
+
+.order-details {
+    width: 90%;
+    margin: 0 auto;
+}
+.order__label {
+    display:block;
+    color: #624949;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.order__input {
+    display:block;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    padding-left: 10px;
+    width: 90%;
+    height: 20px;
+    border-radius: 5px;
+    background: rgb(248, 221, 248);
+    border:2px solid rgb(166, 166, 165);
+    font-weight: bold;
+    font-size: 16px;
+    -webkit-box-shadow: inset 0 0 0 50px #fff;
+    -webkit-text-fill-color: rgb(143, 107, 141);
+}
+
+.credit-card {
+    background: -webkit-linear-gradient(45deg, rgb(143, 107, 141) 32%, rgb(248, 221, 248) 80%);
+    background: -moz-linear-gradient(45deg, rgb(143, 107, 141) 32%, rgb(248, 221, 248) 80%);
+    background: linear-gradient(45deg, rgb(143, 107, 141) 32%, rgb(248, 221, 248) 80%);
+    border: 2px solid rgb(143, 107, 141);
+    width:60%;
+    height: 25%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px 10px 150px 10px;
+    margin-bottom: 20px;
+}
+.order__err {
+    color:rgb(219, 52, 85);
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3px;
+    visibility: hidden;
+}
+.err__input {
+    background-color: rgba(219, 52, 85, 0.396);
+    border-color: rgb(219, 52, 85);
+}
+
+#pay-system{
+    width: 50px;
+    height: 50px;
+}
+.credit-card-number__div{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#credit-card-number{
+    flex-grow: 1;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+.credit-card-other__div {
+    position: relative;
+    display: flex;
+}
+
+.credit-card-other__div label {
+    color:#fff;
+    display: inline;
+}
+.credit-card-other__div input {
+    display: inline;
+}
+#cvv{
+    width: 50px;
+}
+#valid-date {
+    width: 80px;
+}
+#err-credit-card-number{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 170px;
+}
+#err-validdate{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 170px;
+}
+.err-svv{
+    position: absolute;
+    top: 30px;
+    left: 180px; 
+    width: 150px;
+}
+#confirm {
+    width: 250px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(219, 52, 85); 
+    font-family: 'Jost', sans-serif;
+    color:#fff;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 20px;
+}
+.none {
+    display: none;
+}
+.visible {
+    visibility: visible;
+}
